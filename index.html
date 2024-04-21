@@ -29,14 +29,16 @@
         <h1>BookNotes Meeting Minutes</h1>
         <hr>
         <section id = "Attendees">
-          <h2> Meeting Attendees</h2>
-          <ul>
-            <li>Shambhavi</li>
-            <li>Shravika</li>
-            <li>Jasmine</li>
-            <li>Henry</li>
-            <li>Kate</li>
-          </ul>
+          <div class = "attendees_style">
+            <h2> Meeting Attendees</h2>
+            <ul >
+              <li>Shambhavi</li>
+              <li>Shravika</li>
+              <li>Jasmine</li>
+              <li>Henry</li>
+              <li>Kate</li>
+            </ul>
+          </div>
         </section>
         <hr>
         <section id = "agenda">
@@ -86,56 +88,58 @@
         <hr> 
           <form>
             <fieldset>
-              <legend>Join Our book Club </legend>
-              <label for="name">Name: </label>
-              <input type="text" name="name" id="name" required >
-              <br><br>
-              <label for="email">Email: </label>
-              <input type="email" name="email" id="email" required >
-              <br><br>
-              <label for="birthdate">Date of Birth:</label><br>
-              <input type="date" id="birthdate" name="birthdate" required><br><br>
-              <label>Preferred Genres:</label><br>
-              <input type="checkbox" value="Fiction">
-              <label>Fiction</label><br>
-              <input type="checkbox" value="Mystery">
-              <label>Mystery</label><br>
-              <input type="checkbox" value="Fantasy">
-              <label>Fantasy</label><br>
-              <input type="checkbox" value="Romance">
-              <label>Romance</label><br>
-              <input type="checkbox" value="Science Fiction">
-              <label>Science Fiction</label><br>
-              <input type="checkbox" value="Other">
-              <label>Other</label><br>
-              <label for="other">Please mention your preferred genres, if selected "Other":</label>
-              <input type="text" id="other" name="other"><br><br>
+              <div class="forForm">
+                <legend>Join Our book Club </legend>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" required >
+                <br><br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required >
+                <br><br>
+                <label for="birthdate">Date of Birth:</label><br>
+                <input type="date" id="birthdate" name="birthdate" required><br><br>
+                <label>Preferred Genres:</label><br>
+                <input type="checkbox" value="Fiction">
+                <label>Fiction</label><br>
+                <input type="checkbox" value="Mystery">
+                <label>Mystery</label><br>
+                <input type="checkbox" value="Fantasy">
+                <label>Fantasy</label><br>
+                <input type="checkbox" value="Romance">
+                <label>Romance</label><br>
+                <input type="checkbox" value="Science Fiction">
+                <label>Science Fiction</label><br>
+                <input type="checkbox" value="Other">
+                <label>Other</label><br>
+                <label for="other">Please mention your preferred genres, if selected "Other":</label>
+                <input type="text" id="other" name="other"><br><br>
 
-              <label for="Cupacke">Favorite Cupcake Flavour:</label>
-              <select id="Cupacke" name="Cupacke" required>
-                <option value="">Select...</option>
-                <option>Chocolate</option>
-                <option>Vanilla</option>
-                <option>Strawberry</option>
-              </select><br><br>
-              <label for="ser">If we were to start reading a book series, which one would you prefer?</label>
-              <input type = "text" list="series" id="ser" name="ser" >
+                <label for="Cupacke">Favorite Cupcake Flavour:</label>
+                <select id="Cupacke" name="Cupacke" required>
+                  <option value="">Select...</option>
+                  <option>Chocolate</option>
+                  <option>Vanilla</option>
+                  <option>Strawberry</option>
+                </select><br><br>
+                <label for="ser">If we were to start reading a book series, which one would you prefer?</label>
+                <input type = "text" list="series" id="ser" name="ser" >
 
-              <datalist id="series">
-                <option value="Harry Potter series"></option>
-                <option value="Lord of the Rings series"></option>
-                <option value="Game of Thrones series"></option>
-                <option value="Hunger Games series"></option>
-                <option value="Percy Jackson series"></option>
-              </datalist><br><br>
-          
-              <label for="story">Tell us about your favorite book:</label><br> 
-              <textarea id="story" name="story" rows="5" cols="33"></textarea><br><br>
-              <label for="join">Are you excited to join us?</label><br>
-              <input type="radio" id="join" name="join" value="huey" required >
-              <label for="join">Yes!</label><br><br>
-              <button type="submit">Join Now</button>
-            </fieldset><br><br>
+                <datalist id="series">
+                  <option value="Harry Potter series"></option>
+                  <option value="Lord of the Rings series"></option>
+                  <option value="Game of Thrones series"></option>
+                  <option value="Hunger Games series"></option>
+                  <option value="Percy Jackson series"></option>
+                </datalist><br><br>
+            
+                <label for="story">Tell us about your favorite book:</label><br> 
+                <textarea id="story" name="story" rows="5" cols="33"></textarea><br><br>
+                <label for="join">Are you excited to join us?</label><br>
+                <input type="radio" id="join" name="join" value="huey" required >
+                <label for="join">Yes!</label><br><br>
+                <button type="submit">Join Now</button>
+              </div>
+            </fieldset>
           </form>  
       </main>
       <footer>
