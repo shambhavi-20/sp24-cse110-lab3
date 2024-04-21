@@ -18,9 +18,10 @@ a:visited {
     width: auto;
     height: auto;
     column-gap: 30px;
+    row-gap: 20px;
     grid-template:
       [header-left] "head main" 100px [header-right]
-      [main-left] "nav main" 350px [main-right]
+      [main-left] "nav main" 400px [main-right]
       [footer-top] "foot foot" 30px [footer-bottom]
 
 }
@@ -48,22 +49,23 @@ nav{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: right;
+    align-content: left;
     width:auto;
     height: auto;
     margin: 5px;
     padding: 7px;
-    border: 5px solid black;
+    border: 5px solid rgb(0,0,0, 0.3);
     background-color: color(display-p3 0.671 0.485 0.351 / 1)
 }
 
 .navigation_item {
+    flex-shrink: 3;
     background-image: url('Untitled_Artwork.png');
     margin: 5px;
     padding: 10px;
     font-size: 15pt;
     font-weight: bold;
-    border: 3px solid black;
+    border: 3px solid rgba(0,0,0, 0.8);
     order: 5;
 }
 
@@ -80,10 +82,13 @@ h1 {
     font-size: 22mm;
   }
 
+#recap {
+    color: color-mix(in lch, plum, darkred );
+}
+
 form{
     background-color: cornsilk
 }
-
 
 footer {
     grid-area: foot;
