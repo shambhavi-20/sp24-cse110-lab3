@@ -1,11 +1,92 @@
-body {
-    background-color: lightblue;
+a:link {
+    color: cornsilk;
+}
+
+a:visited {
+    color: cornsilk;
+}
+
+@font-face {
+    font-family: "jacquard24";
+    src:
+      url("jacquard24-regular-webfont.woff") format("woff");
+    font-weight: 1000;
+    font-style: normal;
   }
+#page {
+    display: grid;
+    width: auto;
+    height: auto;
+    column-gap: 30px;
+    grid-template:
+      [header-left] "head main" 100px [header-right]
+      [main-left] "nav main" 350px [main-right]
+      [footer-top] "foot foot" 30px [footer-bottom]
+
+}
   
+/* Background color */
+body {
+    background-color: #a6bd9e;
+}
+
+header {
+    margin-top: 20px; 
+    color: hsl(18, 72%, 17%);
+    grid-area: head;
+}
+
+.header_H{
+    font-size: 20pt;
+}
+
+nav{
+    grid-area: nav;  
+}
+/* flex box for navigation */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: right;
+    width:auto;
+    height: auto;
+    margin: 5px;
+    padding: 7px;
+    border: 5px solid black;
+    background-color: color(display-p3 0.671 0.485 0.351 / 1)
+}
+
+.navigation_item {
+    background-image: url('Untitled_Artwork.png');
+    margin: 5px;
+    padding: 10px;
+    font-size: 15pt;
+    font-weight: bold;
+    border: 3px solid black;
+    order: 5;
+}
+
+
+main{
+    grid-area: main;
+}
 /* For the main heading */
-  h1 {
-    color: navy;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
+h1 {
+    color: cornsilk;
+
+    text-align: left;
+    font-family: "jacquard24";
+    font-size: 22mm;
   }
+
+form{
+    background-color: cornsilk
+}
+
+
+footer {
+    grid-area: foot;
+    margin-bottom: 20px; 
+    color: hsl(18, 72%, 17%);
+}
