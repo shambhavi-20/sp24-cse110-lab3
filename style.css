@@ -1,0 +1,11 @@
+body {
+    background-color: lightblue;
+  }
+  
+/* For the main heading */
+  h1 {
+    color: navy;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
