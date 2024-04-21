@@ -81,6 +81,10 @@ h1 {
     font-size: 22mm;
   }
 
+h2{
+    text-decoration-line: underline;
+    text-decoration-color: black;
+}
 .attendees_style{
     font-size: large;
 }
@@ -116,5 +120,6 @@ form{
 footer {
     grid-area: foot;
     margin-bottom: 20px; 
+    text-align: center;
     color: hsl(18, 72%, 17%);
 }
