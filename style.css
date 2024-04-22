@@ -1,5 +1,5 @@
 :root {
-    --main-text:  color: color-mix(in lch, rgb(243, 214, 243), rgb(236, 133, 133) );
+    --main-text: color-mix(in lch, rgb(243, 214, 243), rgb(236, 133, 133) );
 }
 
   a:link {
@@ -243,7 +243,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     tr:hover {
-        background-color:  rgb(234, 225, 189)
+        background-color:  rgba(234, 225, 189, 0.5)
     }
 }
   
