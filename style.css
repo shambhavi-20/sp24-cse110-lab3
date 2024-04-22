@@ -20,7 +20,7 @@ body {
 }
 
 * {
-    margin: 0px;
+    margin: 2px;
     padding: 2px;
     box-sizing: border-box;
     border-color: hsl(18, 72%, 17%);
@@ -76,7 +76,7 @@ footer {
     color: hsl(18, 72%, 17%);
 }
 
-@media (min-width: 1000px) {
+@media only screen and (min-width: 700px) {
     #page {
         display: grid;
         width: auto;
