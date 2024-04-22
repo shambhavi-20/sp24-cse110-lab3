@@ -28,13 +28,8 @@ body {
     padding: 2px;
 }
 
-br{
-    border-top-color: hsl(18, 72%, 17%);
-    border-bottom-color: hsl(18, 72%, 17%);
-    border-right-color: hsl(18, 72%, 17%);
-    border-left-color: hsl(18, 72%, 17%);
-    border-width: 2px;
-    border-style: solid;
+hr{
+    border-width: 0px;
 }
 
 .header_H{
@@ -66,8 +61,12 @@ nav{
     padding: 7px;
     border-width: 5px;
     border-style: solid;
-    border-color: rgba(0,0,0, 0.3);
+    border-top-color: rgba(0,0,0, 0.3);
+    border-bottom-color: rgba(0,0,0, 0.3);
+    border-right-color: rgba(0,0,0, 0.3);
+    border-left-color: rgba(0,0,0, 0.3);
     background-color: color(display-p3 0.448 0.271 0.25 / 1);
+    border-radius: 0.3cm;
 }
 
 .navigation_item {
@@ -139,6 +138,7 @@ tr[class="title"] {
 tr[class="here"] {
     font-weight: bolder;
 }
+
 
 
 #agenda h2{
@@ -225,12 +225,28 @@ h2~p, h2~details {
 hr ~ section {
     border: 1px solid rgba(255, 248, 220, 0.5);
     border-radius: 00.40cm;
-    & > h2 {
-        color: rgb(238, 227, 185);
-    }
 }
 
 p:has(+ a) {
     color: rgba(255, 248, 220, 0.8);;
-  }
+}
 
+tr.absent{
+    color: #f75c9d;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    tr:hover {
+        background-color: cornsilk;
+    }
+}
+  
+th, td {
+    padding: 8px;
+    border-top: 1px solid cornsilk;;
+    text-align: left;
+    border-bottom: 1px solid cornsilk;
+}
+  
