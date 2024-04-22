@@ -76,7 +76,7 @@ footer {
     color: hsl(18, 72%, 17%);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1000px) {
     #page {
         display: grid;
         width: auto;
@@ -98,11 +98,8 @@ footer {
     footer{
         position: fixed;
         top: 97vh; 
-    }
-    
+    } 
 }
-
-
 
 main{
     grid-area: main;
