@@ -1,3 +1,17 @@
+@media (min-width: 500px) {
+    #page {
+        display: grid;
+        width: auto;
+        height: auto;
+        column-gap: 380px;
+        row-gap: 20px;
+        grid-template:
+            [header-left] "head main" 4.5em [header-right]
+            [main-left] "nav main" 400px [main-right]
+            [footer-top] "foot main" 30px [footer-bottom];
+    }
+}
+
 a:link {
     color: cornsilk;
 }
@@ -13,18 +27,15 @@ a:visited {
     font-weight:999;
     font-style: normal;
   }
-#page {
-    display: grid;
-    width: auto;
-    height: auto;
-    column-gap: 30px;
-    row-gap: 20px;
-    grid-template:
-      [header-left] "head main" 4.5em [header-right]
-      [main-left] "nav main" 400px [main-right]
-      [footer-top] "foot main" 30px [footer-bottom]
+  
 
+* {
+    margin: 0px;
+    padding: 2px;
+    box-sizing: border-box;
+    border-color: hsl(18, 72%, 17%);
 }
+  
   
 /* Background color */
 body {
@@ -32,6 +43,7 @@ body {
 }
 
 header { 
+    position: fixed; 
     color: hsl(18, 72%, 17%);
     grid-area: head;
 }
@@ -43,8 +55,12 @@ header {
 nav{
     grid-area: nav;  
 }
+
 /* flex box for navigation */
 .navigation {
+    position: fixed; 
+    top: 90px; 
+    z-index: 100;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -74,6 +90,7 @@ nav{
 
 main{
     grid-area: main;
+    z-index: 200;
 }
 /* For the main heading */
 
@@ -97,22 +114,24 @@ main{
     color: color-mix(in lch, plum, darkred );
 }
 
+
+
 form{
     background-color: cornsilk;
     border-radius: 0.7cm;
-    border-width: 0.9cm;
+    border-width: calc(10px + 3vw);
     border-style: solid;
     border-color: rgb(237, 230, 203); 
 }
 
 .forForm{
     background-color: cornsilk;
-    height: 80vh;
 }
 
 footer {
     grid-area: foot;
-    margin-bottom: 20px; 
+    position: fixed;
+    top: 97vh; 
     text-align: center;
     color: hsl(18, 72%, 17%);
 }
