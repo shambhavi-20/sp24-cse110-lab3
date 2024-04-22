@@ -1,5 +1,5 @@
 :root {
-    --main-text: #e3a6bf;
+    --main-text:  color: color-mix(in lch, rgb(243, 214, 243), rgb(236, 133, 133) );
 }
 
   a:link {
@@ -124,7 +124,7 @@ img{
 }
 .attendees_style{
     font-size: large;
-    color: color-mix(in lch, rgb(243, 214, 243), rgb(236, 133, 133) );
+    color: var(--main-text,  #e3a6bf);
 }
 
 .attendees_style  > ul{
