@@ -16,14 +16,18 @@ a:visited {
   
 /* Background color */
 body {
-    background-color: #a6bd9e;
+    background-image: url('Untitled_Artwork.jpg');
 }
 
 * {
     margin: 2px;
     padding: 2px;
-    box-sizing: border-box;
+}
+
+br{
     border-color: hsl(18, 72%, 17%);
+    border-width: 2px;
+    border-style: solid;
 }
 
 .header_H{
@@ -31,12 +35,13 @@ body {
 }
 
 header { 
-    color: hsl(18, 72%, 17%);
+    color: cornsilk;
     grid-area: head;
 }
 
 nav{
     grid-area: nav;  
+    
 }
 
 /* flex box for navigation */
@@ -52,7 +57,7 @@ nav{
     border-width: 5px;
     border-style: solid;
     border-color: rgba(0,0,0, 0.3);
-    background-color: color(display-p3 0.671 0.485 0.351 / 1)
+    background-color: color(display-p3 0.448 0.271 0.25 / 1);
 }
 
 .navigation_item {
@@ -109,11 +114,21 @@ main{
 
 .attendees_style{
     font-size: large;
+    color: color-mix(in lch, rgb(243, 214, 243), rgb(236, 133, 133) );
 }
 
 .attendees_style  > ul{
     font-size: 0.9em;
 }
+
+tr[class="title"] {
+    font-size: larger;
+    align-content: center;
+}
+tr[class="here"] {
+    font-weight: bolder;
+}
+
 
 #agenda > h2{
     font-size: x-large;
@@ -122,8 +137,9 @@ main{
 #agenda > h2 > ul{
     font-size: 0.9rem;
 }
-#recap {
-    color: color-mix(in lch, plum, darkred );
+
+#agenda, #recap, #new, #nextMonth{
+    color: #e3a6bf;
 }
 
 form{
@@ -131,11 +147,30 @@ form{
     border-radius: 0.7cm;
     border-width: calc(10px + 3vw);
     border-style: solid;
-    border-color: rgb(237, 230, 203); 
+    border-color: rgb(237, 230, 203);
+    color: hsl(18, 72%, 17%);
 }
 
 .forForm{
     background-color: cornsilk;
 }
 
+button:hover {
+    background-color: #e3a6bf;
+}
 
+img:hover{
+    display: block;
+    background-color:cornsilk;
+    padding: 10px 10px 10px 10px;
+}
+legend{
+    font-size: larger;
+    color: cornsilk;
+    display: inline;
+    background-color: color(display-p3 0.448 0.271 0.25 / 1);
+    border-color: hsl(18, 72%, 17%);
+    border-width: 3px;
+    border-style: solid;  
+    padding: 5px;
+}
