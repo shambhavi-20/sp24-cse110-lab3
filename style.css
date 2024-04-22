@@ -1,7 +1,7 @@
 :root {
     --main-text: #e3a6bf;
 }
-  
+
   a:link {
     color: cornsilk;
 }
@@ -141,16 +141,17 @@ tr[class="here"] {
 }
 
 
-#agenda > h2{
+#agenda h2{
     font-size: x-large;
 }
 
-#agenda > h2 > ul{
-    font-size: 0.9rem;
+#agenda > ol{
+    font-size: 1.05rem;
+    margin-left: 0.5cm;
 }
 
 #agenda, #recap, #new, #nextMonth{
-    color:var(--main-text);
+    color:var(--main-text,  #e3a6bf);
 }
 
 form{
@@ -172,7 +173,7 @@ form{
 }
 
 button:hover {
-    background-color: var(--main-text);
+    background-color: var(--main-text, #e3a6bf);
 }
 
 img:hover, video:active{
@@ -212,3 +213,24 @@ legend{
     top: 80px;
     left: 340px;
 }
+
+h2 + p {
+    background-color: rgba(0, 0, 0, 0.526);
+}
+
+h2~p, h2~details {
+    background-color: rgba(0, 0, 0, 0.526);  
+}
+
+hr ~ section {
+    border: 1px solid rgba(255, 248, 220, 0.5);
+    border-radius: 00.40cm;
+    & > h2 {
+        color: rgb(238, 227, 185);
+    }
+}
+
+p:has(+ a) {
+    color: rgba(255, 248, 220, 0.8);;
+  }
+
