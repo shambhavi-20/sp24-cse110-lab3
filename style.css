@@ -1,4 +1,8 @@
-a:link {
+:root {
+    --main-text: #e3a6bf;
+}
+  
+  a:link {
     color: cornsilk;
 }
 
@@ -20,12 +24,15 @@ body {
 }
 
 * {
-    margin: 2px;
+    margin: 2px 2px 2px 2px;
     padding: 2px;
 }
 
 br{
-    border-color: hsl(18, 72%, 17%);
+    border-top-color: hsl(18, 72%, 17%);
+    border-bottom-color: hsl(18, 72%, 17%);
+    border-right-color: hsl(18, 72%, 17%);
+    border-left-color: hsl(18, 72%, 17%);
     border-width: 2px;
     border-style: solid;
 }
@@ -52,7 +59,10 @@ nav{
     align-content: flex-start;
     width: max-content;
     height: max-content;
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
     padding: 7px;
     border-width: 5px;
     border-style: solid;
@@ -138,16 +148,21 @@ tr[class="here"] {
 }
 
 #agenda, #recap, #new, #nextMonth{
-    color: #e3a6bf;
+    color:var(--main-text);
 }
 
 form{
+    margin:auto;
     background-color: cornsilk;
-    border-radius: 0.7cm;
-    border-width: calc(10px + 3vw);
-    border-style: solid;
+    border-radius: 0.20cm 0.7cm 0.10cm 0.7cm;
+    border-style: solid solid solid solid;
     border-color: rgb(237, 230, 203);
     color: hsl(18, 72%, 17%);
+    border-top-width: calc(10px + 3vw);
+    border-bottom-width: calc(10px + 3vw);
+    border-right-width: calc(10px + 3vw);
+    border-left-width: calc(10px + 3vw);
+
 }
 
 .forForm{
@@ -155,7 +170,7 @@ form{
 }
 
 button:hover {
-    background-color: #e3a6bf;
+    background-color: var(--main-text);
 }
 
 img:hover, video:active{
@@ -171,16 +186,22 @@ audio:active{
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
-    border-radius: 0.5in;
+    border-top-right-radius: 0.5in;
+    border-top-left-radius: 0.5in;
+    border-bottom-left-radius: 0.5in;
+    border-bottom-right-radius: 0.5in;
 }
 legend{
     font-size: larger;
     color: cornsilk;
     display: inline;
     background-color: color(display-p3 0.448 0.271 0.25 / 1);
-    border-color: hsl(18, 72%, 17%);
-    border-width: 3px;
-    border-style: solid;  
+    border-color: hsl(18, 72%, 17%) hsl(18, 72%, 17%) hsl(18, 72%, 17%) hsl(18, 72%, 17%);
+    border-width: 3px 3px 3px 3px;
+    border-top-style: solid;  
+    border-bottom-style: solid;  
+    border-right-style: solid;  
+    border-left-style: solid;  
     padding: 5px;
 }
 
