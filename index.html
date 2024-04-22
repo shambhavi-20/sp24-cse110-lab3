@@ -6,6 +6,18 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <title>Meeting Minutes</title>
+    <style>
+      h1 {
+        text-align: left;
+        font-family: "jacquard24";
+        font-size: 22mm;
+        text-decoration-line: underline;
+        text-decoration-color: cornsilk;
+      }
+      h2{
+        color: rgb(238, 227, 185);
+      }
+    </style>
   </head>
   <body>
     <div id="page">
@@ -26,18 +38,21 @@
       </div>
       
       <main>
-        <h1>BookNotes Meeting Minutes</h1>
+        <h1 style=" color:cornsilk">BookNotes Meeting Minutes</h1>
         <hr>
         <section id = "Attendees">
           <div class = "attendees_style">
             <h2> Meeting Attendees</h2>
-            <ul >
-              <li>Shambhavi</li>
-              <li>Shravika</li>
-              <li>Jasmine</li>
-              <li>Henry</li>
-              <li>Kate</li>
-            </ul>
+            <table>
+              <tr>
+                <th>Shambhavi</th>
+                <th>Attended</th>
+              </tr>
+              <tr>
+                <td>Shravika</td>
+                <td>Present</td>
+              </tr>
+            </table>
           </div>
         </section>
         <hr>
@@ -90,6 +105,7 @@
             <fieldset>
               <div class="forForm">
                 <legend>Join Our book Club </legend>
+                <br>
                 <label for="name">Name: </label>
                 <input type="text" name="name" id="name" required >
                 <br><br>

@@ -10,7 +10,7 @@ a:visited {
     font-family: "jacquard24";
     src:
       url("jacquard24-regular-webfont.woff") format("woff");
-    font-weight: 1000;
+    font-weight:999;
     font-style: normal;
   }
 #page {
@@ -20,7 +20,7 @@ a:visited {
     column-gap: 30px;
     row-gap: 20px;
     grid-template:
-      [header-left] "head main" 100px [header-right]
+      [header-left] "head main" 4.5em [header-right]
       [main-left] "nav main" 400px [main-right]
       [footer-top] "foot main" 30px [footer-bottom]
 
@@ -31,8 +31,7 @@ body {
     background-color: #a6bd9e;
 }
 
-header {
-    margin-top: 20px; 
+header { 
     color: hsl(18, 72%, 17%);
     grid-area: head;
 }
@@ -49,12 +48,14 @@ nav{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: left;
+    align-content: flex-start;
     width:auto;
     height: auto;
     margin: 5px;
     padding: 7px;
-    border: 5px solid rgb(0,0,0, 0.3);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0,0,0, 0.3);
     background-color: color(display-p3 0.671 0.485 0.351 / 1)
 }
 
@@ -65,7 +66,9 @@ nav{
     padding: 10px;
     font-size: 15pt;
     font-weight: bold;
-    border: 3px solid rgba(0,0,0, 0.8);
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(0,0,0, 0.8);
 }
 
 
@@ -73,18 +76,8 @@ main{
     grid-area: main;
 }
 /* For the main heading */
-h1 {
-    color: cornsilk;
 
-    text-align: left;
-    font-family: "jacquard24";
-    font-size: 22mm;
-  }
 
-h2{
-    text-decoration-line: underline;
-    text-decoration-color: black;
-}
 .attendees_style{
     font-size: large;
 }
@@ -106,10 +99,10 @@ h2{
 
 form{
     background-color: cornsilk;
-    border-bottom: 0.9cm solid rgb(237, 230, 203);
-    border-top: 0.9cm solid rgb(237, 230, 203);
-    border-left: 0.9cm solid rgb(237, 230, 203);
-    border-right: 0.9cm solid rgb(237, 230, 203);
+    border-radius: 0.7cm;
+    border-width: 0.9cm;
+    border-style: solid;
+    border-color: rgb(237, 230, 203); 
 }
 
 .forForm{
