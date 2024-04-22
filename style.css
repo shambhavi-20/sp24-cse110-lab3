@@ -63,7 +63,6 @@ nav{
 .navigation_item {
     flex-shrink: 3;
     background-image: url('Untitled_Artwork.png');
-    max-width: auto;
     margin: 5px;
     padding: 10px;
 
@@ -78,7 +77,7 @@ nav{
 footer {
     grid-area: foot;
     text-align: center;
-    color: hsl(18, 72%, 17%);
+    color: cornsilk;
 }
 
 @media only screen and (min-width: 700px) {
@@ -183,4 +182,10 @@ legend{
     border-width: 3px;
     border-style: solid;  
     padding: 5px;
+}
+
+.forForm > img{
+    position: absolute;
+    top: 80px;
+    left: 340px;
 }
