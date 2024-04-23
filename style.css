@@ -1,5 +1,5 @@
 :root {
-    --main-text:  #e3a6bf;
+    --background-border: color-mix(in lch, rgb(88, 11, 6), rgb(17, 1, 1));
 }
 
   a:link {
@@ -80,7 +80,7 @@ nav{
 
     border-width: 3px;
     border-style: solid;
-    border-color: color-mix(in lch, rgb(88, 11, 6), rgb(17, 1, 1) );
+    border-color: var(--background-border, black);
 }
 
 footer {
@@ -124,7 +124,7 @@ img{
 }
 .attendees_style{
     font-size: large;
-    color: var(--main-text,  #e3a6bf);
+    color: #e3a6bf;
 }
 
 .attendees_style  > ul{
@@ -151,7 +151,7 @@ tr[class="here"] {
 }
 
 #agenda, #recap, #new, #nextMonth{
-    color:var(--main-text,  #e3a6bf);
+    color: #e3a6bf;
 }
 
 form{
@@ -173,7 +173,7 @@ form{
 }
 
 button:hover {
-    background-color: var(--main-text, #e3a6bf);
+    background-color: #e3a6bf;
 }
 
 img:hover, video:active{
