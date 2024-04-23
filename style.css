@@ -1,5 +1,5 @@
 :root {
-    --main-text: color-mix(in lch, rgb(243, 214, 243), rgb(236, 133, 133) );
+    --main-text:  #e3a6bf
 }
 
   a:link {
@@ -71,7 +71,7 @@ nav{
 
 .navigation_item {
     flex-shrink: 3;
-    background-image: url('images/bookshelf.jpg');
+    background-image: url('images/bookshelf.png');
     margin: 5px;
     padding: 10px;
 
@@ -80,7 +80,7 @@ nav{
 
     border-width: 3px;
     border-style: solid;
-    border-color: rgba(0,0,0, 0.8);
+    border-color: color-mix(in lch, rgb(88, 11, 6), rgb(17, 1, 1) );
 }
 
 footer {
