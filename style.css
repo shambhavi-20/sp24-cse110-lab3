@@ -12,8 +12,7 @@ a:visited {
 
 @font-face {
     font-family: "jacquard24";
-    src:
-      url("jacquard24-regular-webfont.woff") format("woff");
+    src: url("jacquard24-regular-webfont.woff") format("woff");
     font-weight:999;
     font-style: normal;
 }
@@ -215,7 +214,7 @@ fieldset > img{
 }
 
 h2{
-    color: rgb(234, 225, 189)
+    color: rgb(234, 225, 189);
 }
 
 h2 + p {
@@ -232,7 +231,7 @@ hr ~ section {
 }
 
 p:has(+ a) {
-    color: rgba(255, 248, 220, 0.8);;
+    color: rgba(255, 248, 220, 0.8);
 }
 
 tr.absent{
@@ -243,13 +242,13 @@ table {
     border-collapse: collapse;
     width: 100%;
     & tr:hover {
-        background-color:  rgba(234, 225, 189, 0.5)
+        background-color:  rgba(234, 225, 189, 0.5);
     }
 }
   
 th, td {
     padding: 8px;
-    border-top: 1px solid cornsilk;;
+    border-top: 1px solid cornsilk;
     text-align: left;
     border-bottom: 1px solid cornsilk;
 }
