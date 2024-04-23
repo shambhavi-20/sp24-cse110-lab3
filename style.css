@@ -20,7 +20,7 @@ a:visited {
   
 /* Background color */
 body {
-    background-image: url('Untitled_Artwork.jpg');
+    background-image: url('images/background.jpg');
 }
 
 * {
@@ -71,7 +71,7 @@ nav{
 
 .navigation_item {
     flex-shrink: 3;
-    background-image: url('Untitled_Artwork.png');
+    background-image: url('images/bookshelf.jpg');
     margin: 5px;
     padding: 10px;
 
