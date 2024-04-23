@@ -242,7 +242,7 @@ tr.absent{
 table {
     border-collapse: collapse;
     width: 100%;
-    tr:hover {
+    & tr:hover {
         background-color:  rgba(234, 225, 189, 0.5)
     }
 }
